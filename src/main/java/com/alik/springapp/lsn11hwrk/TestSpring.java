@@ -1,13 +1,13 @@
 package com.alik.springapp.lsn11hwrk;
 
-import com.alik.springapp.lsn11hwrk.config.SpringConfigHwk;
+import com.alik.springapp.lsn11hwrk.config.SpringConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class TestSpring {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context =
-                new AnnotationConfigApplicationContext(SpringConfigHwk.class);
-        MusicPlayerHwk musicPlayer = context.getBean("musicPlayer", MusicPlayerHwk.class);
+                new AnnotationConfigApplicationContext(SpringConfig.class);
+        MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
         musicPlayer.playMusic();
         context.close();
     }

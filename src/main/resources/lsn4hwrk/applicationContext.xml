@@ -14,7 +14,7 @@
     <bean id="rockMusicBean" class="com.alik.springapp.lsn4hwrk.RockMusic">
     </bean>
 
-    <bean id="musicPlayer10" class="com.alik.springapp.lsn4hwrk.MusicPlayer">
+    <bean id="musicPlayer4hwrk" class="com.alik.springapp.lsn4hwrk.MusicPlayer">
         <property name="musicList">
             <list>
                 <ref bean="classicalMusicBean"/>

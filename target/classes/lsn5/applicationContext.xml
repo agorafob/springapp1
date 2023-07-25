@@ -7,7 +7,7 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:property-placeholder location="classpath:lsn5/musicPlayer10.properties"/>
+    <context:property-placeholder location="classpath:lsn5/musicPlayer.properties"/>
 
     <bean id="musicBean5"
           class="com.alik.springapp.lsn5.ClassicalMusic">

@@ -1,4 +1,5 @@
 package com.alik.springapp.lsn9hwrk;
+
 import org.springframework.stereotype.Component;
 
 import java.util.Random;

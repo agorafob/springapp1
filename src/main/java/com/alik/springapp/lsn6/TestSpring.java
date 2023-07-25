@@ -13,7 +13,6 @@ public class TestSpring {
         System.out.println(classicalMusic1.getSong()+classicalMusic1.hashCode());
         System.out.println(classicalMusic2.getSong()+classicalMusic2.hashCode());
 
-
         context.close();
     }
 }

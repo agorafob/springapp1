@@ -7,6 +7,6 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="com"/>
-    <context:property-placeholder location="classpath:lsn10/musicPlayer10.properties"/>
+    <context:component-scan base-package="com.alik.springapp.lsn10"/>
+    <context:property-placeholder location="classpath:lsn10/musicPlayer.properties"/>
 </beans>

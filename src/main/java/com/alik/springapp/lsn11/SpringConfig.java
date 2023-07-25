@@ -1,31 +1,34 @@
 package com.alik.springapp.lsn11;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.*;
 
 @Configuration
 @ComponentScan
-@PropertySource("classpath:lsn11/musicPlayer11.properties")
+@PropertySource("classpath:lsn11/musicPlayer.properties")
 public class SpringConfig {
     @Bean
-    public ClassicalMusic11 classicalMusic(){
-        return new ClassicalMusic11();
+    @Scope("prototype")
+    public ClassicalMusic classicalMusic(){
+        System.out.println("creating classic 11");
+        return new ClassicalMusic();
     }
 
     @Bean
-    public RockMusic11 rockMusic(){
-        return new RockMusic11();
+    public RockMusic rockMusic(){
+        System.out.println("creating rock 11");
+        return new RockMusic();
     }
 
     @Bean
-    public MusicPlayer11 musicPlayer(){
-        return new MusicPlayer11(classicalMusic(),rockMusic());
+    public MusicPlayer musicPlayer(){
+        System.out.println("creating musicplayer 11");
+        return new MusicPlayer(classicalMusic(),rockMusic());
     }
 
     @Bean
-    public Computer11 computer(){
-        return new Computer11(musicPlayer());
+    @Scope("prototype")
+    public Computer computer(){
+        System.out.println("creating computer 11");
+        return new Computer(musicPlayer());
     }
 }

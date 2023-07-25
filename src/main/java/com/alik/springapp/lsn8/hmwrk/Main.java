@@ -6,8 +6,8 @@ public class Main {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext
                 ("lsn8/hmwrk/applicationContext.xml");
-        FirstLayer firstLayer = context.getBean("firstLayer", FirstLayer.class);
-        firstLayer.firstPlay();
+        FirstLayer firstLayer = context.getBean("first", FirstLayer.class);
+        firstLayer.printFirst();
     }
 
 

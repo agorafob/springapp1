@@ -7,7 +7,7 @@ public class TestSpring {
                 "lsn9hwrk/applicationContext.xml");
         MusicPlayer musicPlayer=context.getBean("musicPlayer", MusicPlayer.class);
         musicPlayer.playMusic(ListOfGenre.ROCK);
-
+        musicPlayer.playMusic(ListOfGenre.CLASSICAL);
         context.close();
     }
 }

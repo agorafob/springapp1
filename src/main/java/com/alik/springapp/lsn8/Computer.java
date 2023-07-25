@@ -1,8 +1,5 @@
 package com.alik.springapp.lsn8;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
 //@Component
 public class Computer {
     private int id;
@@ -13,8 +10,8 @@ public class Computer {
         this.id=1;
     }
 
-    @Override
-    public String toString() {
-        return "Computer id" + id + " " + musicPlayer.playMusic();
-    }
+//    @Override
+//    public String toString() {
+//        return "Computer id" + id + " " + musicPlayer.playMusic();
+//    }
 }

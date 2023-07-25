@@ -7,7 +7,7 @@ public class TestSpring {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
                 "lsn3/applicationContext.xml");
 //Dependency injection
-        MusicPlayer musicPlayer = context.getBean("musicPlayer",MusicPlayer.class);
+        MusicPlayer musicPlayer = context.getBean("musicPlayer3",MusicPlayer.class);
         musicPlayer.playMusic();
 
         context.close();

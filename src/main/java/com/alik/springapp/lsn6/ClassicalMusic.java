@@ -1,14 +1,17 @@
 package com.alik.springapp.lsn6;
 
 public class ClassicalMusic implements Music {
-    private ClassicalMusic(){}
+    private static int counter;
+    private ClassicalMusic(){
+    }
 
-    public static ClassicalMusic getClassicalMusic(){
-        System.out.println("Created new object");
+    public static ClassicalMusic getClassicalMusicWithFactoryMethod(){
+        System.out.println("Created new object with factory method");
+        counter++;
         return new ClassicalMusic();
     }
     public void doMyInit(){
-        System.out.println("Doing my initialization");
+        System.out.println("Doing my initialization " + counter);
     }
 
     public void doMyDestroy(){

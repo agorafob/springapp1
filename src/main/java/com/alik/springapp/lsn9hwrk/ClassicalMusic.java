@@ -10,7 +10,6 @@ public class ClassicalMusic implements Music {
     List<String> classicalMusicPlaylist = Arrays.asList("bah","mozart","vivaldi");
 
     public void getSong(int index) {
-
         System.out.println(classicalMusicPlaylist.get(index));
     }
 }

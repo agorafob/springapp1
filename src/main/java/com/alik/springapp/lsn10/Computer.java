@@ -1,15 +1,16 @@
 package com.alik.springapp.lsn10;
 
 import org.springframework.stereotype.Component;
+
 @Component
 
 public class Computer {
     int id;
-     MusicPlayer10 musicPlayer;
+    MusicPlayer musicPlayer;
 
-    public Computer(MusicPlayer10 musicPlayer) {
+    public Computer(MusicPlayer musicPlayer) {
         this.musicPlayer = musicPlayer;
-        this.id=1;
+        this.id = 1;
     }
 
     @Override

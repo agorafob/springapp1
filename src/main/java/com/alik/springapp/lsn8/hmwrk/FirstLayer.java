@@ -2,14 +2,14 @@ package com.alik.springapp.lsn8.hmwrk;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("first")
 public class FirstLayer {
     SecondLayer secondLayer ;
 
     public FirstLayer(SecondLayer secondLayer) {
         this.secondLayer = secondLayer;
     }
-    void firstPlay(){
+    void printFirst(){
         secondLayer.printSecond();
     }
 }

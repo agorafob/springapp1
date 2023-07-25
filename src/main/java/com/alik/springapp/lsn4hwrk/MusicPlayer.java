@@ -11,8 +11,7 @@ public class MusicPlayer {
     }
 
     public void playMusic() {
-        for (Music mc:musicList
-             ) {
+        for (Music mc : musicList) {
             System.out.println(mc.getSong());
 
         }

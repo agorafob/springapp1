@@ -1,12 +1,14 @@
 package com.alik.springapp.lsn9;
 
-//@Component
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Computer {
     int id;
-     MusicPlayer9 musicPlayer;
-
-    public Computer(MusicPlayer9 musicPlayer) {
+     MusicPlayer musicPlayer;
+@Autowired
+    public Computer(MusicPlayer musicPlayer) {
         this.musicPlayer = musicPlayer;
         this.id=1;
     }

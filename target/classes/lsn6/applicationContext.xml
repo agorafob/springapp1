@@ -7,14 +7,14 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:property-placeholder location="classpath:lsn6/musicPlayer10.properties"/>
+    <context:property-placeholder location="classpath:lsn6/musicPlayer.properties"/>
 
     <bean id="musicBean6"
           class="com.alik.springapp.lsn6.ClassicalMusic"
           init-method="doMyInit"
-          destroy-method="doMyDestroy"
-          factory-method="getClassicalMusic"
-    scope="prototype">
+          factory-method="getClassicalMusicWithFactoryMethod"
+          destroy-method="doMyDestroy">
+<!--    scope="prototype">-->
     </bean>
 
 

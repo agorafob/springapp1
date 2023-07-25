@@ -13,13 +13,13 @@
           class="com.alik.springapp.lsn4.ClassicalMusic">
     </bean>
 
-    <bean id="musicPlayer10" class="com.alik.springapp.lsn4.MusicPlayer">
+    <bean id="musicPlayer4" class="com.alik.springapp.lsn4.MusicPlayer">
         <property name="music" ref="musicBean"/>
-        <property name="name" value="Some name"/>
-        <property name="volume" value="50"/>
+<!--        <property name="name" value="Some name!"/>-->
+<!--        <property name="volume" value="50"/>-->
 
-<!--        <property name="name" value="${musicPlayer.name}"/>-->
-<!--        <property name="volume" value="${musicPlayer.volume}"/>-->
+        <property name="name" value="${musicPlayer.name}"/>
+        <property name="volume" value="${musicPlayer.volume}"/>
     </bean>
 
 </beans>
